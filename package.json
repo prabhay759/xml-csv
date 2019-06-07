@@ -1,0 +1,34 @@
+{
+  "name": "xml-csv",
+  "version": "1.0.0",
+  "description": "Package converts XML to CSV",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/prabhay759/xml-csv#README",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prabhay759/xml-csv.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "xml",
+    "csv",
+    "convert"
+  ],
+  "author": "Prabhay Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "dottie": "^2.0.1",
+    "lodash": "^4.17.11",
+    "os": "^0.1.1",
+    "sax": "^1.2.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "should": "^13.2.3"
+  }
+}
