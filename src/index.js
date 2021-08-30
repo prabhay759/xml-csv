@@ -40,6 +40,9 @@ module.exports = function (input) {
 	saxStream.on("text", function (text) {
 		if (accepting) {
 			if (text.trim() !== "\n" && text.trim() !== "") {
+				if (text.includes(',')){
+					text = `"${text}"`;
+				}
 				dottie.set(currentObj, pathPartsString, text);
 			}
 		}
