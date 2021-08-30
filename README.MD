@@ -53,6 +53,7 @@ xmlcsv({
 		["Airport", "GatewayAirport", "string"]
 	]
 }).pipe(fs.createWriteStream("./sample_1.csv"));
+
 ```
 
 ### Output CSV
@@ -61,6 +62,12 @@ xmlcsv({
 ISO2,ZIP,AgentCode,Route,Color,AvailableService,GatewayAirport
 AD,60000,6000,,VERDE,1110000,1110000
 AD,60002,6000,2A,VERDE,1110000,1110000
+```
+
+
+```javascript
+//to return a promise simply add
+return await new Promise(fulfill => fd.on('finish', fulfill));
 ```
 
 ### License
